@@ -342,7 +342,26 @@ nav a:hover{
     margin-top:40px;
     width:100%;
     border-top:2px dashed black;
-    text-align:center;
+    text-align: center;
+}
+
+#archives article{
+    width:90%;
+    max-width:400px;
+    display:inline-block;
+}
+
+#archives .wrapper{
+    margin-top:20px;
+}
+
+#archives a{
+    text-decoration: none;
+    background:white;
+    padding:8px;
+    border:1px solid #BBB;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /*
