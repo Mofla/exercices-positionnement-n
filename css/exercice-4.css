@@ -42,6 +42,7 @@ header h1{
     margin-top: 20px;
 }
 
+
 @media screen and (min-width:1280px){
     /* si l'écran a une largeur d'au moins 1280px, on agrandi le logo */
     header h1{
@@ -64,6 +65,7 @@ header h1{
  *  Nav
  *
  */
+
 nav ul{
     position: absolute;
     right:5px;
@@ -78,7 +80,7 @@ nav ul li{
 
 nav a {
     text-decoration:none;
-    font-family: 'Concert One', sans-serif;
+    font-family: 'Concerte One', sans-serif;
     font-size:1.4em;
     margin: 8px 16px;
     color:white;
@@ -177,7 +179,7 @@ nav a:hover{
  */
 
 #actualites{
-    margin-top:40px;
+    margin:40px 0;
     width:100%;
     border-top:2px dashed black;
     text-align:center;
@@ -309,7 +311,7 @@ nav a:hover{
  */
 
 #la-une{
-    margin-top:40px;
+    margin:40px 0;
     width:100%;
     border-top:2px dashed black;
     text-align:center;
@@ -339,7 +341,7 @@ nav a:hover{
  */
 
 #archives{
-    margin-top:40px;
+    margin:40px 0;
     width:100%;
     border-top:2px dashed black;
     text-align: center;
@@ -373,13 +375,51 @@ nav a:hover{
 }
 
 #archives a:hover{
-    color:#B51717;
+    background: #33C928;
+    border-color:#2B9921;
+    color:#fff;
 }
 
 .overlay{
     margin:20px;
 }
+/*
+ *
+ * CTA
+ *
+ */
+#cta{
+    margin:40px 0;
+    width:100%;
+    border-top:2px dashed black;
+    text-align: center;
+    /* background:#FFE22B; */
+}
 
+#cta .wrapper{
+}
+
+.button-2{
+    color:#fff;
+    text-shadow: 0 0 4px black;
+    text-decoration: none;
+    background:-moz-linear-gradient(#D6D7FF,#575CDB);
+    padding:8px;
+    border-radius: 8px;
+    border:1px solid #55A;
+}
+
+.button-2:hover{
+    background:-moz-linear-gradient(#FFA296,#ED2610);
+    border-color:#D31908;
+}
+
+#cta h3{
+    font-size:1.4em;
+    font-style: italic;
+    color:red;
+    text-shadow: 0 0 2px black;
+}
 /*
  *
  * Footer
