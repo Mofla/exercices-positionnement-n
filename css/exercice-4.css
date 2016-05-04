@@ -52,7 +52,7 @@ header h1{
 /* Style du "On" de Simplon */
 .color{
     background:#FFFF84;
-    padding:6px 2px;
+    padding:4px 4px;
     border-radius:50%;
     box-shadow: #FFFF00 0px 0px 50px 10px; /* Effet de lumière */
     color:#FF5900;
@@ -349,6 +349,10 @@ nav a:hover{
     width:90%;
     max-width:400px;
     display:inline-block;
+    margin:8px;
+    border:1px solid black;
+    box-shadow: 0 0 8px black;
+    border-radius: 10px;
 }
 
 #archives .wrapper{
@@ -362,6 +366,18 @@ nav a:hover{
     border:1px solid #BBB;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color:#4C4A77;
+    text-shadow: 0 0 4px black;
+}
+
+#archives a:hover{
+    color:#B51717;
+}
+
+.overlay{
+    margin:20px;
 }
 
 /*
