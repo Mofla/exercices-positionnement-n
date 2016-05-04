@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size:25px;
+	}
+
+.gros_carre{
+	width:600px;
+	height:600px;
+	border:1px solid black;
+}
+	
+.petit_carre {
+	position: absolute;
+	/*
+	 * Ajouts
+	 */
+	width:200px;
+	height:200px;
+	display: inline-block;
+	}
+	
+.noir{
+	background: black;
+	position: relative;
+	float: left;
+}
+
+.jaune{
+	background: yellow;
+	clear:both;
+	position: relative;
+}
+
+.gris1{
+	background: #DDD;
+	position: relative;
+	float: right;
+}
+
+.orange{
+	background: orange;
+	clear:both;
+	position: relative;
+	float:left;
+}
+
+.blanc{
+	background: white;
+	clear:both;
+	position: relative;
+}
+
+.bleu{
+	background: blue;
+	position: relative;
+	float: right;
+}
+
+.gris2{
+	background: #333;
+	clear:both;
+	position: relative;
+	float:left;
+}
+
+.rouge{
+	background: red;
+	clear:both;
+	position: relative;
+}
+
+.gris3{
+	background: #AAA;
+	position: relative;
+	float: right;
+}
+
+header{
+	color:white;
+	text-align: right;
+	text-transform: uppercase;
+	padding:8px 8px;
+	font-size: 0.8em;
+}
+
+nav{
+	padding:8px 8px;
+	text-transform: capitalize;
+	font-size: 0.8em;
+}
+
+article{
+	text-align:center;
+	line-height: 200px;
+	font-size: 1.2em;
+}
+
+footer{
+	color:white;
+	padding:8px 8px;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: 5px;
+	right:5px;
+}

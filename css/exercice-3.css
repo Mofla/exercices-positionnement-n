@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:url('../images/exercice-4/fusee.jpg');
+	margin:auto;
+}
+
+nav {
+	width:70%;
+    position: fixed;
+	/*
+	 *ajouts
+	 */
+	left:50%;
+	background:rgba(107,178,240,0.8);
+	margin-left:-35%;
+	color:#fff;
+	text-align:center;
+	font-family: 'Concert One';
+	font-size:1.8em;
+	}
+
+nav ul{
+	list-style: none; /* Pas puce */
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 24px;
+}
+
+nav ul li:last-child{
+	font-family: Lobster;
+	font-size:1.4em;/*
+	position: absolute;
+	right:10px;
+	bottom:10px;
+	top:24px;*/
+	float:right;
+	margin-bottom: 6px;
+	margin-right:36px;
+}
+
+nav span{
+	color:#85cf52;
+	display:inline-block;
+	background:white;
+	border-radius:15%;
+	font-style: normal;
+	font-family: 'Concert One';
+	font-size:0.9em;
+	padding:2px 4px 14px 4px;
+	margin-left: 6px;
+}
+
+

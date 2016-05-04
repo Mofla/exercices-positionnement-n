@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    margin:auto;
+    width:100%;
+    height:100%;
+}
+/* header qui fait toute la longueur de la page et avec des bords inférieurs arrondis */
+header{
+    background:#90DAF4;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 100%;
+    height:120px;
+    position: fixed; /* on le fixe pour qu'il reste dispo en scrollant*/
+    box-shadow: 0px 6px 16px black; /* une ch'tite ombre */
+    display:inline-block;
+    top:0; /* on le colle au plafond */
+}
+
+header:hover{
+    background:url('../images/exercice-4/fusee.jpg');
+}
+
+.wrapper{
+}
+
+/*
+ *
+ * Style du logo
+ * 
+ */
+header h1{
+    font-family: Lobster;
+    font-size: 3em;
+    color:white;
+    text-shadow: 2px 2px 4px black;
+    cursor: default;
+    margin-left: 8px;
+    display:inline-block;
+    float: left;
+    margin-top: 20px;
+}
+
+@media screen and (min-width:1280px){
+    /* si l'écran a une largeur d'au moins 1280px, on agrandi le logo */
+    header h1{
+        font-size:3.5em;
+    }
+}
+
+/* Style du "On" de Simplon */
+.color{
+    background:#FFFF84;
+    padding:6px 2px;
+    border-radius:50%;
+    box-shadow: #FFFF00 0px 0px 50px 10px; /* Effet de lumière */
+    color:#FF5900;
+    text-shadow: 1px 1px 2px #7A2600;
+}
+
+/*
+ *
+ *  Nav
+ *
+ */
+nav ul{
+    position: absolute;
+    right:5px;
+    bottom: 0;
+    float:right;
+}
+
+nav ul li{
+    list-style-type:none;
+    display:inline-block;
+}
+
+nav a {
+    text-decoration:none;
+    font-family: 'Concert One', sans-serif;
+    font-size:1.4em;
+    margin: 8px 16px;
+    color:white;
+    text-shadow:-2px 2px 4px black;
+}
+
+
+@media screen and (min-width:1024px){
+    nav a{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width:700px){
+    nav ul li{
+        display:block;
+    }
+    nav a{
+        font-size: 1em;
+    }
+}
+
+nav a:hover{
+    color:#FFFF84;
+    text-shadow: 2px 2px 16px #FFFF00;
+}
+
+/*
+ *
+ *  Photo fond
+ *
+ */
+
+#photo-fond{
+    margin-top: 140px;
+    background:#FFF359;
+    border:2px solid black;
+    border-radius:20px;
+    padding:6px;
+    padding-bottom: 40px;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+    text-align:center;
+}
+
+@media screen and (max-width:600px){
+    #photo-fond{
+        width:70%;
+    }
+}
+
+#photo-fond h2{
+    color:white;
+    font-family: Roboto;
+    font-style: oblique;
+    text-shadow:1px 1px 4px black;
+}
+
+#photo-fond h2 strong{
+    color:white;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-style: oblique;
+    text-shadow:0 0 4px black;
+}
+
+.button-1{
+    text-decoration: none;
+    padding:8px 6px;
+    background:#6767DB;
+    border-radius:8px;
+    color:white;
+    text-transform: uppercase;
+    font-style: italic;
+    box-shadow: 0px 0px 0px 2px #5050D3;
+}
+
+.button-1:hover{
+    background: #A50000;
+    box-shadow: 0px 0px 8px 2px #C40000;
+    color:#FFC300;
+    text-shadow: 1px 1px 1px #997000;
+}
+
+.button-1:hover::after{
+    content: ' !!!';
+}
+
+/*
+ *
+ *  Actualités
+ *
+ */
+
+#actualites{
+    margin-top:40px;
+    width:100%;
+    border-top:2px dashed black;
+    text-align:center;
+}
+
+#actualites ul li{
+    display:inline-block;
+    max-width: 32%;
+    padding:4px;
+    font-size:0.8em;
+}
+
+@media screen and (max-width:400px){
+    #actualites ul li{
+        max-width: 100%;
+    }
+}
+
+/*
+ *
+ *  Ajout des icones avant le texte des li
+ *
+ */
+
+.actualites-1::before{
+    background-image: url('../images/exercice-4/inauguration.png');
+    background-size: 100px 100px;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    float: left;
+    content:'';
+}
+
+.actualites-2::before{
+    background-image: url('../images/exercice-4/cafe.png');
+    background-size: 100px 100px;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    float: left;
+    content:'';
+}
+
+.actualites-3::before{
+    background-image: url('../images/exercice-4/ordi.png');
+    background-size: 100px 100px;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    float: left;
+    content:'';
+}
+
+#actualites h4{
+    font-size:1.4em;
+}
+
+#actualites p{
+    text-align: left;
+}
+
+@media screen and (max-width:975px){
+    .actualites-1::before{
+        background-image: url('../images/exercice-4/inauguration.png');
+        background-size: 75px 75px;
+        display: inline-block;
+        width:75px;
+        height:75px;
+        float: left;
+        content:'';
+    }
+    .actualites-2::before{
+        background-image: url('../images/exercice-4/cafe.png');
+        background-size: 75px 75px;
+        display: inline-block;
+        width:75px;
+        height:75px;
+        float: left;
+        content:'';
+    }
+    .actualites-3::before{
+        background-image: url('../images/exercice-4/ordi.png');
+        background-size: 75px 75px;
+        display: inline-block;
+        width:75px;
+        height:75px;
+        float: left;
+        content:'';
+    }
+}
+
+@media screen and (max-width:680px){
+    .actualites-1::before{
+        background-image: url('../images/exercice-4/inauguration.png');
+        background-size: 50px 50px;
+        display: inline-block;
+        width:50px;
+        height:50px;
+        float: left;
+        content:'';
+    }
+    .actualites-2::before{
+        background-image: url('../images/exercice-4/cafe.png');
+        background-size: 50px 50px;
+        display: inline-block;
+        width:50px;
+        height:50px;
+        float: left;
+        content:'';
+    }
+    .actualites-3::before{
+        background-image: url('../images/exercice-4/ordi.png');
+        background-size: 50px 50px;
+        display: inline-block;
+        width:50px;
+        height:50px;
+        float: left;
+        content:'';
+    }
+}
+
+
+/*
+ *
+ * La une
+ *
+ */
+
+#la-une{
+    margin-top:40px;
+    width:100%;
+    border-top:2px dashed black;
+    text-align:center;
+}
+
+#
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer{
+    border-top:2px dashed black;
+    width:100%;
+}
+
+#footer-links{
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+}
+/*
+ *
+ * Le clear au cas où
+ *
+ */
+#clear{
+    clear:both;
+}
